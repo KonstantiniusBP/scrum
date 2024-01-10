@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scrum Board</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card-container" id="iceBox" ondrop="drop(event, 'iceBox')" ondragover="allowDrop(event)">
+            <div class="inner_card"><h2>Ice Box</h2></div>
+        </div>
+        <div class="card-container" id="inProgress" ondrop="drop(event, 'inProgress')" ondragover="allowDrop(event)">
+            <div class="inner_card"><h2>In Progress</h2></div>
+        </div>
+        <div class="card-container" id="complete" ondrop="drop(event, 'complete')" ondragover="allowDrop(event)">
+            <div class="inner_card"><h2>Complete</h2></div>
+        </div>
+
+        <script src="script.js"></script>
+        <button onclick="addTask()">Add Task</button>
+    </body>
+</html>
